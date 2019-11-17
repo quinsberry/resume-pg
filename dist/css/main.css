@@ -28,15 +28,23 @@
 }
 
 .home__name {
-  font-size: 5rem;
-  padding-bottom: 1rem;
-  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
   border-bottom: 2px solid #fff;
 }
 
 .home__name-last {
   color: #ff652f;
   font-weight: 700;
+}
+
+.home h2 {
+  font-size: 1.3rem;
+}
+
+.home i {
+  font-size: 1.5rem;
 }
 
 .menu-btn {
@@ -398,7 +406,7 @@
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
-  padding-top: 35vh;
+  padding-top: 30vh;
   overflow: hidden;
   background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.7)), to(rgba(39, 39, 39, 0.3))), url("../img/home1.jpg") center right 40%;
   background: linear-gradient(to right, rgba(39, 39, 39, 0.7), rgba(39, 39, 39, 0.3)), url("../img/home1.jpg") center right 40%;
@@ -406,7 +414,7 @@
 }
 
 .contact h2 {
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 2rem;
 }
 
@@ -415,13 +423,52 @@
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  grid-gap: 2rem;
-  font-size: 1.5rem;
+  grid-gap: 1rem;
+  font-size: 1.2rem;
 }
 
 .contact .social-icons {
   position: initial;
   margin-top: 2rem;
+}
+
+@media screen and (min-width: 576px) {
+  body main .social-icons {
+    bottom: 1rem;
+    left: 1rem;
+  }
+  body main .social-icons a {
+    padding: 0.4rem;
+  }
+  body main .social-icons a i {
+    font-size: 2rem;
+  }
+  body footer {
+    font-size: 1rem;
+    right: 1rem;
+  }
+  .home__name {
+    font-size: 5rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+  .home h1 {
+    font-size: 1.5;
+  }
+  .home h2 {
+    font-size: 1.5rem;
+  }
+  .contact {
+    padding-top: 35vh;
+  }
+  .contact h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  .contact__list {
+    grid-gap: 2rem;
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -516,11 +563,11 @@ main {
 main .social-icons {
   position: fixed;
   bottom: 1rem;
-  left: 1rem;
+  left: 0.5rem;
 }
 
 main .social-icons a {
-  padding: 0.4rem;
+  padding: 0.3rem;
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 }
@@ -529,8 +576,12 @@ main .social-icons a:hover {
   color: #ff652f;
 }
 
+main .social-icons a i {
+  font-size: 1.5rem;
+}
+
 footer {
-  font-size: 1rem;
+  font-size: 0.9rem;
   position: fixed;
   bottom: 0.4rem;
   right: 1rem;
