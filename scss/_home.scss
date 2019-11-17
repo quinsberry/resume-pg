@@ -16,14 +16,22 @@
     background-size: cover;
 
     &__name {
-        font-size: 5rem;
-        padding-bottom: 1rem;
-        margin-bottom: 1rem;
+        font-size: 2.5rem;
+        padding-bottom: 0.5rem;
+        margin-bottom: 0.5rem;
         border-bottom: 2px solid set-text-color($primary-color);
 
         &-last {
             color: $secondary-color;
             font-weight: 700;
         }
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    i {
+        font-size: 1.5rem;
     }
 }

@@ -1,3 +1,53 @@
+@include media-sm {
+    body {
+        main {
+            .social-icons {
+                bottom: 1rem;
+                left: 1rem;
+                
+                a {
+                    padding: 0.4rem;
+                    i {
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+        footer {
+        font-size: 1rem;
+        right: 1rem;  
+        }
+    }
+    .home {
+        &__name {
+        font-size: 5rem;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 1.5;
+        }
+
+        h2 {
+        font-size: 1.5rem;
+        }   
+    }
+    .contact {
+        padding-top: 35vh;
+
+        h2 {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        }
+        
+        &__list {
+        grid-gap: 2rem;
+        font-size: 1.5rem;
+        }
+    }
+}
+
 @include media-md {
     .menu-btn {
         visibility: hidden;
@@ -69,3 +119,4 @@
         // height: 45vh;   
     }
 }
+

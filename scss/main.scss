@@ -42,21 +42,25 @@ main {
     .social-icons {
         position: fixed;
         bottom: 1rem;
-        left: 1rem;
+        left: 0.5rem;
 
         a {
-            padding: 0.4rem;
+            padding: 0.3rem;
             @include transition-ease;
 
             &:hover {
                 color: $secondary-color;
+            }
+
+            i {
+                font-size: 1.5rem;
             }
         }
     }
 }
 
 footer {
-    font-size: 1rem;
+    font-size: 0.9rem;
     position: fixed;
     bottom: 0.4rem;
     right: 1rem;
