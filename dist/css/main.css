@@ -527,6 +527,18 @@
   }
 }
 
+@media screen and (min-width: 1600px) {
+  .about__bio-image .about__bio {
+    width: 50%;
+  }
+  .about .jobs {
+    width: 40vw;
+  }
+  .about .jobs__job {
+    max-width: 1000px;
+  }
+}
+
 body {
   background: #272727;
   color: #fff;

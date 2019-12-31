@@ -112,6 +112,19 @@
 }
 
 @include media-xl {
+    .about {
+        &__bio-image {
+            .about__bio {
+                width: 50%;
+            }
+        }
+        .jobs {
+            width: 40vw;
+            &__job {
+                max-width: 1000px;
+            }
+        }
+    }
     .about__bio-image {
         // height: 55vh;
     }
