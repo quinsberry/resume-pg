@@ -21,6 +21,12 @@
         .text-secondary {
             font-size: 2rem;
             margin-bottom: 2rem;
+            text-shadow: 1px 3px 3px $primary-color;
+            // color: white;
+            &__last {
+                // color: $secondary-color;
+                // color: white;
+        }
         }
     }
 
