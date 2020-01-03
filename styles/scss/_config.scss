@@ -31,7 +31,7 @@ $gradient-color: black;
     }
 }
 @mixin media-lg {
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 1124px) {
         @content;
     }
 }
