@@ -604,4 +604,24 @@ footer {
   padding: 1rem;
   color: #fff;
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-width: 1px 1px 1px 2px;
+  border-color: #555;
+  background-color: #777;
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  border-width: 1px 1px 1px 2px;
+  background-color: #ff652f;
+}
+
+::-webkit-scrollbar-track {
+  border-width: 0;
+}
 /*# sourceMappingURL=main.css.map */

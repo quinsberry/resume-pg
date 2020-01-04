@@ -67,5 +67,22 @@ footer {
     text-align: right;
     padding: 1rem;
     color: set-text-color($primary-color);
-
 }
+
+::-webkit-scrollbar{
+    width: 8px;
+    &-thumb {
+        border-width:1px 1px 1px 2px;
+        border-color: #555;
+        background-color: #777; 
+        border-radius: 15px;
+        &:hover {
+            border-width:1px 1px 1px 2px;
+            background-color: $secondary-color;
+        }
+    }
+    &-track {
+        border-width:0;
+    }
+}
+
