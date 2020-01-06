@@ -353,6 +353,7 @@
 .projects__item:hover .projects__btn {
   opacity: 1;
   z-index: 2;
+  pointer-events: auto;
 }
 
 .projects__btns {
@@ -375,6 +376,7 @@
   color: #000;
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
+  pointer-events: none;
 }
 
 .projects__btn:hover {
