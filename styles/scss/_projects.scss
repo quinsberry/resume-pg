@@ -77,6 +77,7 @@
             .projects__btn {
                 opacity: 1;
                 z-index: 2;
+                pointer-events: auto;
             }
         }
     }
@@ -96,6 +97,7 @@
         opacity: 0;
         color: set-text-color($secondary-color);
         @include transition-ease;
+        pointer-events: none;
 
         &:hover {
             color: set-text-color(set-text-color($secondary-color));
