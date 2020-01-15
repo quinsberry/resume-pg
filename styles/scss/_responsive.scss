@@ -144,7 +144,9 @@
         .skills {
             width: 40vw;
             &__skill {
-                max-width: 1000px;
+                ul {
+                    padding-left: 14%;
+                }
             }
         }
     }

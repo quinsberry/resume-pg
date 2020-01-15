@@ -285,7 +285,7 @@
 }
 
 .about .skills__skill ul {
-  padding: 0 14%;
+  padding-left: 14%;
 }
 
 .about .skills__skill h6 {
@@ -584,8 +584,8 @@
   .about .skills {
     width: 40vw;
   }
-  .about .skills__skill {
-    max-width: 1000px;
+  .about .skills__skill ul {
+    padding-left: 14%;
   }
 }
 
