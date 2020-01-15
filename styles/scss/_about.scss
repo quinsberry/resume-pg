@@ -37,20 +37,54 @@
         }
     }
 
-    .jobs {
+    .skills {
         width: 60vw;
         margin: 2rem auto 0 auto;
         display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 2rem;
+        // grid-template-columns: 1fr;
+        grid-template-columns: repeat( auto-fill, minmax(200px, 1fr));
+        grid-gap: 1rem;
 
-        &__job {
-            background: lighten($primary-color, 10%);
-            padding: 0.5rem;
-            border-bottom: 5px solid $secondary-color;
+        &__skill {
+            // background: lighten($primary-color, 10%);
+            // padding: 1rem 0.5rem;
+            padding: 0 0.5rem;
+            // padding: 0 10%;
+            // border-bottom: 5px solid $secondary-color;
 
-            h2, h3 {
+            .text-secondary {
+                padding: 1rem 0 .8rem 10%;
+            }
+
+            .line {
+                width: 95%;
+                margin: auto;
+                height: 1px;
+                // background-color: $gradient-color;
+                margin-bottom: .8rem;
+                border-radius: 50%;
+                &-ul {
+                    width: 30%;
+                    margin-left: 12%;
+                }
+            }
+
+            li {
+                padding: 0 3% .2rem 3%;
+                list-style-type: none;
+                font-weight: normal;
+            }
+
+            h4 {
+                padding-bottom: 0.3rem;
+            }
+
+            h2, ul {
                 margin: 0.5rem 0;
+            }
+
+            ul {
+                padding-left: 14%;
             }
 
             h6 {
