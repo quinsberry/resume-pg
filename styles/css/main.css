@@ -239,27 +239,56 @@
   padding-bottom: 1rem;
 }
 
-.about .jobs {
+.about .skills {
   width: 60vw;
   margin: 2rem auto 0 auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  grid-gap: 2rem;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1rem;
 }
 
-.about .jobs__job {
-  background: #414141;
-  padding: 0.5rem;
-  border-bottom: 5px solid #ff652f;
+.about .skills__skill {
+  padding: 0 0.5rem;
 }
 
-.about .jobs__job h2, .about .jobs__job h3 {
+.about .skills__skill .text-secondary {
+  padding: 1rem 0 .8rem 10%;
+}
+
+.about .skills__skill .line {
+  width: 95%;
+  margin: auto;
+  height: 1px;
+  margin-bottom: .8rem;
+  border-radius: 50%;
+}
+
+.about .skills__skill .line-ul {
+  width: 30%;
+  margin-left: 12%;
+}
+
+.about .skills__skill li {
+  padding: 0 3% .2rem 3%;
+  list-style-type: none;
+  font-weight: normal;
+}
+
+.about .skills__skill h4 {
+  padding-bottom: 0.3rem;
+}
+
+.about .skills__skill h2, .about .skills__skill ul {
   margin: 0.5rem 0;
 }
 
-.about .jobs__job h6 {
+.about .skills__skill ul {
+  padding: 0 14%;
+}
+
+.about .skills__skill h6 {
   margin: 0.3rem 0;
 }
 
@@ -434,7 +463,20 @@
   margin-top: 2rem;
 }
 
+@media screen and (min-width: 320px) and (max-width: 575px) {
+  .about .skills {
+    width: 80vw;
+    margin: 0 auto;
+  }
+}
+
 @media screen and (min-width: 576px) {
+  .about .skills {
+    width: 80vw;
+    margin: 0 auto;
+    -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
   body main .social-icons {
     bottom: 1rem;
     left: 1rem;
@@ -516,6 +558,12 @@
 }
 
 @media screen and (min-width: 1124px) {
+  .about .skills {
+    max-width: 60vw;
+    grid-row-gap: 10vw;
+    -ms-grid-columns: (minmax(300px, 1fr))[2];
+        grid-template-columns: repeat(2, minmax(300px, 1fr));
+  }
   .projects__items {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
@@ -533,10 +581,10 @@
   .about__bio-image .about__bio {
     width: 50%;
   }
-  .about .jobs {
+  .about .skills {
     width: 40vw;
   }
-  .about .jobs__job {
+  .about .skills__skill {
     max-width: 1000px;
   }
 }

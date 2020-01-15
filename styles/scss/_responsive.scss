@@ -1,4 +1,20 @@
+@include media-xs {
+    .about {
+        .skills {
+            width: 80vw;
+            margin: 0 auto;
+        }
+    }
+}
+
 @include media-sm {
+    .about {
+        .skills {
+            width: 80vw;
+            margin: 0 auto;
+            grid-template-columns: repeat( auto-fill, minmax(300px, 1fr));
+        }
+    }
     body {
         main {
             .social-icons {
@@ -97,6 +113,13 @@
 }
 
 @include media-lg {
+    .about {
+        .skills {
+            max-width: 60vw;
+            grid-row-gap: 10vw;
+            grid-template-columns: repeat( 2, minmax(300px, 1fr));
+        }
+    }
     .projects {
         &__items {
             grid-template-columns: repeat(3, 1fr);
@@ -118,9 +141,9 @@
                 width: 50%;
             }
         }
-        .jobs {
+        .skills {
             width: 40vw;
-            &__job {
+            &__skill {
                 max-width: 1000px;
             }
         }
