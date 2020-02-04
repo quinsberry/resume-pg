@@ -263,13 +263,12 @@
   -webkit-box-shadow: 2px 3px 2px 2px #161616;
           box-shadow: 2px 3px 2px 2px #161616;
   border-radius: 2px;
-  text-shadow: 1px 1px 1px #353535;
   color: #e7e7e7;
 }
 
 .about .skills__skill .text-secondary {
   padding: 1rem 0 .8rem 10%;
-  text-shadow: 1px 1px 1px #353535;
+  text-shadow: 1px 1px 1px #585858;
 }
 
 .about .skills__skill .line {
