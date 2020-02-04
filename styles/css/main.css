@@ -244,17 +244,32 @@
   margin: 2rem auto 0 auto;
   display: -ms-grid;
   display: grid;
+  padding-top: 2vh;
   -ms-grid-columns: (minmax(200px, 1fr))[auto-fill];
       grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-gap: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .about .skills__skill {
   padding: 0 0.5rem;
 }
 
+.about .skills__skill-container {
+  background: #616060;
+  padding-bottom: 30px;
+  -webkit-box-shadow: 2px 3px 2px 2px #161616;
+          box-shadow: 2px 3px 2px 2px #161616;
+  border-radius: 2px;
+  text-shadow: 1px 1px 1px #353535;
+  color: #e7e7e7;
+}
+
 .about .skills__skill .text-secondary {
   padding: 1rem 0 .8rem 10%;
+  text-shadow: 1px 1px 1px #353535;
 }
 
 .about .skills__skill .line {
@@ -474,8 +489,8 @@
   .about .skills {
     width: 80vw;
     margin: 0 auto;
-    -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    -ms-grid-columns: (minmax(300px, 320px))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(300px, 320px));
   }
   body main .social-icons {
     bottom: 1rem;
